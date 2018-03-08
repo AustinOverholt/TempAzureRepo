@@ -68,27 +68,27 @@
                                 <input type="text" class="form-control" id="StreetName">
                             </div>
                         </div>
-                        <button>Search</button>
+                        <button class="float-right btn-style">Search</button>
                     </form>
                 </div>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto"></ul>
-        <li class="nav-item">
-            <a class="fas fa-cog fa-lg"></a>
+        <li class="nav-item pr-4">
+            <a class="fas fa-cog fa-2x"></a>
         </li>
         <li class="nav-item dropdown">
             <a class="navbar-brand dropdown-toggle nav-font" data-toggle="dropdown" href="#">
                 <img src="~/Content/Pictures/avatar_square.png" width="30" height="30" class="img-fluid d-inline-block align-top">
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <!-- <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a> -->
+                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item">John Doe</a>
+                    <a class="dropdown-item" href="#">My Settings</a>
+                    <a class="dropdown-item" href="#">Logout</a> 
+                </div>
             </a>
         </li>
     </div>
     </ul>
-    </div>
 </nav>
 
 <!-- Left Sidebar -->
@@ -118,20 +118,20 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid p-1">
             <!-- Header -->
             <!-- Report Id... Action Menu-->
-            <section class="container">
+            <section>
                 <div class="row">
                     <div class="col-sm-10">
-                        <h3>Report ID# 99418: Light Pole Damaged or Light Out <i class="pencil-style fas fa-pencil-alt"></i></h3>
+                        <h4>Report ID# 99418: Light Pole Damaged or Light Out <i class="pencil-style fas fa-pencil-alt"></i></h4>
                         <p>Created: 01/28/2014 @@ 05:10 PM PST <strong>Last Updated: 01/28/2014 @@ 05:11 PM PST</strong></p>
                     </div>
                     <div class="col-sm-2">
-                        <button class="btn-style btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn-style btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-sign-in-alt"></i> Action Menu
                         </button>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#"><i class="fa fa-trash"></i> Delete</a>
                             <a class="dropdown-item" href="#"><i class="fa fa-envelope"></i> Re-Email</a>
                             <a class="dropdown-item" href="#"><i class="fa fa-file-pdf"></i> Save as PDF</a>
@@ -145,7 +145,7 @@
             <!-- Left Panels -->
             <!-- Assignment Status
             Author and Device -->
-            <section class="container">
+            <section>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="ml-0 card">
@@ -208,7 +208,7 @@
             </section>
             <!-- Public comments
             Input Box (Add Comments) -->
-            <section>
+            <section class="pt-2">
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="card">
@@ -219,14 +219,14 @@
                                 <hr />
                             </div>
                             <form>
-                                <div class="form-group">
+                                <div class="form-group p-0">
                                     <div class="col-sm-12">
                                         <textarea class="form-control" rows="3"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group float-right">
                                     <div class="col-sm-12">
-                                        <button>Add Comment</button>
+                                        <button class="btn-style">Add Comment</button>
                                     </div>
                                 </div>
                             </form>
