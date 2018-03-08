@@ -1,0 +1,289 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- Toolbar -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">
+        <img src="~/Content/Pictures/CitySourced-Logo-Shield-Shadow-Vector-300x300.png" width="30" height="30" class="img-fluid d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link nav-font" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-font" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-font" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Metrics
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-font" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Widgets
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-font" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-search"></span> Search
+                </a>
+                <div class="dropdown-menu" style="padding:17px; width:300px;" aria-labelledby="navbarDropdownMenuLink">
+                    <form>
+                        <div class="form-group row">
+                            <label for="CitysourcedId" class="col-sm-6 col-form-label">Citysourced ID:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="CitySourcedId">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="VendorId" class="col-sm-6 col-form-label">Vendor ID:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="VendorId">
+                            </div>
+                            <label for="StreetName" class="col-sm-6 col-form-label">Street Name:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="StreetName">
+                            </div>
+                        </div>
+                        <button>Search</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto"></ul>
+        <li class="nav-item">
+            <a class="fas fa-cog fa-lg"></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="navbar-brand dropdown-toggle nav-font" data-toggle="dropdown" href="#">
+                <img src="~/Content/Pictures/avatar_square.png" width="30" height="30" class="img-fluid d-inline-block align-top">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a> -->
+            </a>
+        </li>
+    </div>
+    </ul>
+    </div>
+</nav>
+
+<!-- Left Sidebar -->
+<div id="wrapper" class="toggled">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Service Request Details
+                </a>
+            </li>
+            <hr />
+            <li>
+                <a href="#">Private Notes</a>
+            </li>
+            <li>
+                <a href="#">Additional Data</a>
+            </li>
+            <li>
+                <a href="#">Nearby Requests</a>
+            </li>
+            <li>
+                <a href="#">Event Logs</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <!-- Header -->
+            <!-- Report Id... Action Menu-->
+            <section class="container">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h3>Report ID# 99418: Light Pole Damaged or Light Out <i class="pencil-style fas fa-pencil-alt"></i></h3>
+                        <p>Created: 01/28/2014 @@ 05:10 PM PST <strong>Last Updated: 01/28/2014 @@ 05:11 PM PST</strong></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn-style btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-sign-in-alt"></i> Action Menu
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="fa fa-trash"></i> Delete</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-envelope"></i> Re-Email</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-file-pdf"></i> Save as PDF</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-print"></i> Print</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-cloud"></i> View Public Url</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Left Panels -->
+            <!-- Assignment Status
+            Author and Device -->
+            <section class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="ml-0 card">
+                            <div class="card-header">Assignment and Status</div>
+                            <div class="card-body">
+                                <p class="card-paragraph">Assigned To: <strong>Unassigned</strong>  <i class="pencil-style fas fa-pencil-alt"></i></p>
+                                <hr />
+                                <p class="card-paragraph">Current Status: <strong>Received</strong>  <i class="pencil-style fas fa-pencil-alt"></i></p>
+                                <p class="card-paragraph">Status Last Updated By: <a class="link-style" href="#">Miami Beach, FL</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">Report Details</div>
+                            <div class="card-body">
+                                <p class="card-paragraph">Privacy: Public [ <a class="link-style" href="#">Make Private</a> ]</p>
+                                <hr />
+                                <p class="card-paragraph">Description: street light is out. Very dark dangerous crossing
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Middle Panels -->
+                    <!-- Report Details
+                    Integration Details -->
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">Attachments</div>
+                            <div class="card-body">
+                                <img class="img-fluid img-thumbnail" src="~/Content/Pictures/alley.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">Author and Device</div>
+                            <div class="card-body">
+                                <p class="card-paragraph"><strong>Susan Lipman</strong></p>
+                                <p class="card-paragraph"><a class="link-style" href="#">susan@susanlipman.com</a></p>
+                                <p class="card-paragraph">Tel: Unknown</p>
+                                <hr />
+                                <p class="card-paragraph">Submitted On: <a class="link-style" href="#">Apple iPhone 4 (CDMA)</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">Integration Details</div>
+                            <div class="card-body">
+                                <p class="card-paragraph">WebQa Ticket ID: W016454-012814</p>
+                                <hr />
+                                <div class="text-center">
+                                    <button class="btn-style">POST Issue</button> <button class="btn-style">GET Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Public comments
+            Input Box (Add Comments) -->
+            <section>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="card">
+                            <div class="card-header">Public Comments</div>
+                            <div class="card-body">
+                                <p class="card-paragraph"><strong>Miami Beach FL</strong> 1/28/2014 @@ 05:10 PM PST</p>
+                                <p class="card-paragraph">This report has been submitted directly to Miami Beach, FL and assigned ticket id W016454-012814.</p>
+                                <hr />
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group float-right">
+                                    <div class="col-sm-12">
+                                        <button>Add Comment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Location Information -->
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">Location Information</div>
+                            <div class="card-body">
+                                <div id="map"></div>
+                                <hr />
+                                <p>Nearest Address:</p>
+                                <p>1700 West Avenue, Miami Beach, FL 33139, USA</p>
+                                <hr />
+                                <p>Coordinates: 25.792816, -80.142609</p>
+                                <p>Compass Heading:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer navbar navbar-expand-lg sticky-bottom">
+    <p class="float-left">Copyright © 2014 Citysourced, Inc. All Rights Reserved</p>
+    <div class="navbar-nav ml-auto">
+        <p class="float-right">Server Name: CS-PRD-WEB01</p>
+    </div>
+</footer>
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script>
+    var map;
+    function initMap() {
+        var myLatLng = { lat: 25.792816, lng: -80.142609 }
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 14
+        });
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ-htXGfHRteZDN5V8utWHRJR5TRLTcCs&callback=initMap"
+        async defer></script>
